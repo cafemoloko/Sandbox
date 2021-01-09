@@ -39,10 +39,10 @@ namespace SandBox
 							.Select(b => b.BookTitle);
 
 			Console.WriteLine("Books containing 'Król' in the title:");
-            foreach (var res in krol)
-            {
+			    foreach (var res in krol)
+			    {
 				Console.WriteLine(res);
-			}
+			    }
 
 			// Query 02 
 			var pages = from b in books
@@ -72,12 +72,12 @@ namespace SandBox
 			Console.ReadKey();
 		}
 
-        public class Book
-        {
+		public class Book
+		{
 			public int BookId;
 			public string BookTitle;
 			public string BookAuthor;
 			public int BookPages;
-        }
+       		}
     }
 }
